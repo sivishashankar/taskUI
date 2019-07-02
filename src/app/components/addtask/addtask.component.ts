@@ -40,7 +40,7 @@ export class AddtaskComponent implements OnInit {
     this.myFrmGrp = fb.group({
       task_nme: ['', Validators.required],
       task_prty: ['', Validators.required],
-      task_prnt: ['', Validators.required],
+      task_prnt: [''],
       task_st_dt: ['', Validators.required],
       task_end_dt: ['', Validators.required]
     });

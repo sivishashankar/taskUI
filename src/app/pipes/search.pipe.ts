@@ -15,7 +15,7 @@ export class SearchPipe implements PipeTransform {
     priorityTo?: number,
     startDate?: string,
     endDate?: string) {
-
+      if(!tasks) return tasks;
     // Filter Task name
     tasks = tasks.filter(task => task.task.toLowerCase().includes(taskname.toLowerCase()));
     // Filter parent task
